@@ -1,23 +1,76 @@
 <html>
 	<head>
 		<style type="text/css">
-		.tardis-wrapper .tardis-top-wrapper{
-			width: 200px;
-			height: 200px;
-			background-color: orange;	
-			margin-left: auto;
-			margin-right: auto;
-		}
-			.tardis-wrapper .tardis-body-wrapper{
-				height: 500px;
-				width: 200px;
-				background-color: rgb(0,0,0);
+			.tardis-wrapper .tardis-top-wrapper{
+				width: 400px;
 				margin-left: auto;
 				margin-right: auto;
 			}
+			.tardis-wrapper .tardis-top-wrapper .top-light-wrapper{
+				width: inherit;
+				height: 70px;
+				background: orange;
+			}
+			.tardis-wrapper .tardis-top-wrapper .top{
+				width: 355px;
+				background: black;
+				height: 40;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.tardis-wrapper .tardis-top-wrapper .top-base{
+				width: inherit;
+				background: #455169;
+				height: 40px;
+			}
+			.tardis-wrapper .tardis-body-wrapper{
+				height: 675px;
+				width: 400px;
+				background-color: #3F526B;
+				margin-left: auto;
+				margin-right: auto;
+				/*padding-top: 75px;*/
+			}
+			.tardis-wrapper .tardis-body-wrapper .police-sign-wrapper{
+				width: inherit;
+				height: 80px;
+				padding-top: 10px;
+				border-top: 1px solid black;
+			}
+			.tardis-wrapper .police-sign-wrapper .police-sign{
+				background-color: black;
+				height: 60px;
+				width: 350px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			.tardis-wrapper .tardis-body-wrapper .door-wrapper{
+				height: 540px;
+				width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+				border: 1px solid black;
+			}
+			.tardis-wrapper .door-wrapper .left-door-wrapper {
+				height: inherit;
+				width: 135px;
+				display: inline-block;
+				float: left;
+				background-color: #4E6B8D;
+				padding-right: 10px;
+				border-right: 2px solid black;
+			}
+			.tardis-wrapper .door-wrapper .right-door-wrapper{
+				height: inherit;
+				width: 145px;
+				display: inline-block;
+				background-color: #4E6B8D;
+				border-left: 2px solid black;
+				margin-left: 5px;
+			}
 			.tardis-wrapper .tardis-lock{
-				height: 15px;
-				width: 15px;
+				height: 18px;
+				width: 18px;
 				background-color: grey;
 				border-radius: 50%;
 				display: inline-block;
@@ -31,8 +84,8 @@
 				border-radius: 50%;
 				position: absolute;
 				display: inline-block;
-				top: 3px;
-				left: 5px;
+				top: 4px;
+				left: 6px;
 			}
 			.tardis-lock .tardis-lock-key-wrapper .tardis-lock-key-triangle{
 				width: 3px;
@@ -41,8 +94,8 @@
 				background-color: rgb(0,0,0);
 				position: absolute;
 				display: inline-block;
-				top: 7px;
-				left: 5px;
+				top: 8px;
+				left: 6px;
 			}
 		</style>
 
@@ -50,15 +103,38 @@
 	<body>
 		<div class="tardis-wrapper">
 			<!-- Need to learn to make a triangle -->
-			<div class="tardis-top-wrapper"></div>
+			<div class="tardis-top-wrapper">
+				<div class="top-light-wrapper"></div>
+				<div class="top"></div>
+				<div class="top-base"></div>
+			</div>
 			<div class="tardis-body-wrapper">
-				<div class="tardis-lock">
-				<div class="tardis-lock-key-wrapper">
-					<span class="tardis-lock-key-circle"></span>
-					<!-- Need to learn to make a triangle -->
-					<span class="tardis-lock-key-triangle"></span>
+				<div class="police-sign-wrapper">
+					<div class="police-sign"></div>
 				</div>
-			</div>	
+				<div class="door-wrapper">
+					<div class="left-door-wrapper">
+						<div class="window-wrapper-left"></div>
+						<div class="door-square"></div>
+						<div class="door-square"></div>
+						<div class="door-square"></div>
+					</div>
+					
+					<div class="right-door-wrapper">
+						<div class="window-wrapper-right"></div>
+						<div class="door-square"></div>
+						<div class="tardis-lock">
+							<div class="tardis-lock-key-wrapper">
+								<span class="tardis-lock-key-circle"></span>
+								<!-- Need to learn to make a triangle -->
+								<span class="tardis-lock-key-triangle"></span>
+							</div>
+						</div>	
+						<div class="door-square"></div>
+						<div class="door-square"></div>
+					</div>
+				</div>
+			
 			</div>
 		</div>
 
