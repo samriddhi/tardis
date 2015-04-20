@@ -7,18 +7,31 @@
 				margin-right: auto;
 			}
 			.tardis-wrapper .tardis-top-wrapper .top-light-wrapper{
-				width: 315px;
-				height: 25px;
+				width: 40px;
+				height: 75px;
+				margin: 0 auto;
+			}
+			.tardis-wrapper .tardis-top-wrapper .top-light-wrapper .light-cap{
+				height: 10px;
+				border-bottom: 10px solid purple;
+  				border-left: 10px solid transparent;
+  				border-right: 10px solid transparent;
+			}
+			.tardis-wrapper .tardis-top-wrapper .top-light-wrapper .top-light{
+				height: 40px;
 				background: orange;
-				margin-left: auto;
-				margin-right: auto;
+			}
+			.tardis-wrapper .tardis-top-wrapper .top-light-wrapper .light-base{
+				height: 15px;
+				background-color: #354253;
 			}
 			.tardis-wrapper .tardis-top-wrapper .top{
-				width: 355px;
-				background: black;
+				width: 345px;
+				background: #44546B;
 				height: 40;
 				margin-left: auto;
 				margin-right: auto;
+				box-shadow: 0px 2px 4px 2px #44546D;
 			}
 			.tardis-wrapper .tardis-top-wrapper .top-base{
 				width: inherit;
@@ -104,9 +117,12 @@
 	</head>
 	<body>
 		<div class="tardis-wrapper">
-			<!-- Need to learn to make a triangle -->
 			<div class="tardis-top-wrapper">
-				<div class="top-light-wrapper"></div>
+				<div class="top-light-wrapper">
+					<div class="light-cap"></div>
+					<div class="top-light"></div>
+					<div class="light-base"></div>
+				</div>
 				<div class="top"></div>
 				<div class="top-base"></div>
 			</div>
